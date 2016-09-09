@@ -28,7 +28,7 @@ Before do | scenario |
 
   @browser = Selenium::WebDriver.for(:remote, :url => url, :desired_capabilities => capabilities_config, :http_client => client)
 
-  @browser.manage.timeouts.implicit_wait = 10
+  @browser.manage.timeouts.implicit_wait = 90
 end
 
 # "after all"
